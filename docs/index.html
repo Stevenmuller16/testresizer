@@ -16,15 +16,7 @@
 
       parent.postMessage(height, "http://localhost.experify.io:8000");// here we specify our single domain to go to      
     }  
-    window.onresize = function postResize() {
-      console.log("poc");
-      var body = document.body, html = document.documentElement;
-
-      var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                            html.clientHeight, html.scrollHeight, html.offsetHeight );
-
-      parent.postMessage(height, "http://localhost.experify.io:8000");// here we specify our single domain to go to      
-    }  
+    
   </script>
 <link rel="stylesheet" href="styles.09e2c710755c8867a460.css"></head>
 <body>
