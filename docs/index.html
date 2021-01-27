@@ -7,8 +7,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script type="text/javascript">     
      
-    window.onload = postFunction();
-    window.onresize = postFunction();
+    
 
     function postFunction() {
       console.log("poc");
@@ -19,6 +18,8 @@
 
       parent.postMessage(height, "http://localhost.experify.io:8000");// here we specify our single domain to go to      
     }  
+    window.onload = postFunction();
+    window.onresize = postFunction();
   </script>
 <link rel="stylesheet" href="styles.09e2c710755c8867a460.css"></head>
 <body>
