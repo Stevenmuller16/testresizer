@@ -7,7 +7,10 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script type="text/javascript">     
      
-    window.onload = function postFunction() {
+    window.onload = postFunction();
+    window.onresize = postFunction();
+
+    function postFunction() {
       console.log("poc");
       var body = document.body, html = document.documentElement;
 
